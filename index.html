@@ -1,0 +1,298 @@
+<!-- I used chatgpt as a helper trhgoughout the entire process, cleaning up code, filing structures, and especially for javascript interactions. Specific coded projects have attributions in their respective html pages. For the writing/reflections, i used chatgpt to help me fill in gaps in knowledge and ensure accuracy. -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activities + Workshops</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+
+  
+  <!-- JS -->
+<script src="script.js" defer></script>
+</head>
+
+
+<body>
+  <div class="sidebar">
+    <div class="icon logo">
+      <img src="icons/grindrlogo.svg" alt="Grindr Logo" />
+    </div>
+    <div class="icon" data-page="index">
+      <a href="index.html">
+        <img src="icons/Home.svg" alt="Home" />
+      </a>
+    </div>
+    <div class="icon" data-page="research">
+      <a href="research.html">
+        <img src="icons/Researchicon.svg" alt="Research" />
+      </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="header-bar">
+      <h1 class="page-title">
+        <span class="green-dot"></span> Activities + Workshops
+      </h1>
+      <div class="filter-bar">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="2A">2A</button>
+        <button class="filter" data-filter="2B">2B</button>
+        <button class="filter" data-filter="2C">2C</button>
+      </div>
+    </div>
+
+    <div class="grid" id="projectGrid">
+<!-- Project 1 - Basic HTML & CSS -->
+<a href="Projects/Project1BasicHTML&CSS.html" class="project-link" data-category="2A">
+  <div class="project-card">
+    <img src="img/Excercise2a1.jpg" alt="Basic HTML & CSS" />
+    <div class="card-overlay">
+      <span class="green-dot"></span>
+      <h2>Basic HTML & CSS</h2>
+    </div>
+  </div>
+</a>
+<!-- Project 2 - HTML Chase -->
+      <a href="Projects/Project2HTMLChase.html" class="project-link" data-category="2A">
+        <div class="project-card">
+          <img src="img/Excercise2a2.jpg" alt="HTML Chase" />
+          <div class="card-overlay">
+            <span class="green-dot"></span>
+            <h2>HTML Chase</h2>
+          </div>
+        </div>
+      </a>
+<!-- Project 3 - Crazy 8s -->
+      <a href="Projects/Project3crazy8s.html" class="project-link" data-category="2A">
+        <div class="project-card">
+          <img src="img/Excercise2a3.jpg" alt="Crazy 8s" />
+          <div class="card-overlay">
+            <span class="green-dot"></span>
+            <h2>Crazy 8s</h2>
+          </div>
+        </div>
+      </a>
+<!-- Project 4 - What's in my bag -->
+      <a href="Projects/Project4whatsinmybag.html" class="project-link" data-category="2B">
+        <div class="project-card">
+          <img src="img/Excercise2b1.jpeg" alt="What's in my bag" />
+          <div class="card-overlay">
+            <span class="green-dot"></span>
+            <h2>What's in my bag</h2>
+          </div>
+        </div>
+      </a>
+<!-- Project 5 - Rainbow dot-following cursor -->
+      <a href="Projects/Project5rainbowdotfollowingcursor.html" class="project-link" data-category="2B">
+        <div class="project-card">
+          <img src="img/Excercise2b2.jpeg" alt="Rainbow dot-following cursor" />
+          <div class="card-overlay">
+            <span class="green-dot"></span>
+            <h2>Rainbow dot-following cursor</h2>
+          </div>
+        </div>
+      </a>
+
+<!-- Project 6 - INVERT + STRETCH -->
+<a href="Projects/Project6.Invertstretch.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b3.gif" alt="INVERT + STRETCH" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>INVERT + STRETCH</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 7 - Mouse Tracked Camera -->
+<a href="Projects/Project7MouseTrackedCamera.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b4.gif" alt="Mouse Tracked Camera" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Mouse Tracked Camera</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 8 - opposite square and circle -->
+<a href="Projects/Project8Oppositesquareandcircle.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b5.gif" alt="Opposite square and circle" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Opposite square and circle</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 9 - Flickering Inverted Camera -->
+<a href="Projects/Project9FlickeringInvertedCamera.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b6.gif" alt="Flickering Inverted Camera" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Flickering Inverted Camera</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 10 - Live Data Clock -->
+<a href="Projects/Project10.LiveDataClock.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b7.gif" alt="Live Data Clock" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Live Data Clock</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 11 - Mouse Position Spinner -->
+<a href="Projects/Project11.Mousepositionspinner.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b8.gif" alt="Mouse Position Spinner" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Mouse Position Spinner</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 12 - Kaleidescope draw -->
+<a href="Projects/Project12.Kaleidescopedraw.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b9.gif" alt="Kaleidescope draw" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Kaleidescope Draw</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 13 - Music-activated motion -->
+<a href="Projects/Project13.Musicactivatedmotion.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b10.gif" alt="Music-activated motion" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Music-activated motion</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 14 - Bubble data visualisation -->
+<a href="Projects/Project14.Bubbledatavisualisation.html" class="project-link" data-category="2B">
+  <div class="project-card">
+      <img src="img/Excercise2b11.gif" alt="Bubble data visualisation" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Bubble data visualisation</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 15 - Physical Computing Components -->
+<a href="Projects/Project15.Physicalcomputingcomponents.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project15.Physicalcomputingcomponents.jpeg" alt="Physical Computing Components" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Physical Computing Components</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 16 - Push to Light -->
+<a href="Projects/Project16.Pushtolight.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project16.Pushtolight.gif" alt="Push to Light" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Push to Light</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 17 - Potentiometer to Fan -->
+<a href="Projects/Project17.PotentiometertoFan.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project17.PotentiometertoFan.gif" alt="Potentiometer to Fan" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Potentiometer -> Fan</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 18 - Proximity Sensor → Sound -->
+<a href="Projects/Project18.Proximitysensortosound.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project18.Proximitysensortosound.gif" alt="Proximity Sensor → Sound" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Proximity Sensor → Sound</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 19 - Chindogus -->
+<a href="Projects/Project19.Chindogus.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project19.Chindogus.jpeg" alt="Chindogus" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Chindogus</h2>
+      </div>
+    </div>
+  </a>
+
+
+<!-- Project 20 - Vegetable Conductivity Piano -->
+<a href="Projects/Project20.VegetableconductivityPiano.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project20.VegetableconductivityPiano.gif" alt="Vegetable Conductivity Piano" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>Vegetable Conductivity Piano</h2>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 21 - p5.js → Arduino -->
+<a href="Projects/Project21.p5toaruduino.html" class="project-link" data-category="2C">
+  <div class="project-card">
+      <img src="img/Project21.p5toaruduino.jpeg" alt="p5.js → Arduino" />
+      <div class="card-overlay">
+        <span class="green-dot"></span>
+        <h2>p5.js → Arduino</h2>
+      </div>
+    </div>
+  </a>
+
+
+
+
+</div>
+</div>
+<div id="age-gate" class="age-gate-overlay">
+
+  <div class="age-gate-box">
+    <img src="icons/grindrlogo.svg" class="grindr-icon" alt="Grindr Logo" />
+    <h2>18+ Content</h2>
+    <p>This site contains mature themes and viewer discretion is advised.</p>
+    <button id="enterSite">Enter</button>
+  </div>
+</div>
+
+
+
+<!-- Custom Cursor -->
+<div id="custom-cursor"></div>
+
+
+</body>
+</html>
