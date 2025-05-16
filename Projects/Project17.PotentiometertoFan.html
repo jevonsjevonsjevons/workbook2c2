@@ -1,0 +1,146 @@
+<!-- From in-class activity, using a slighly modified version of code from Karen Ann's github - https://github.com/karenanndonnachie/VCA_INTERACTIVEMEDIA/tree/main/Arduino/ARDUINO_BASICS/2.%20POTENTIOMETER_LED -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potentiometer → Fan</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #121212;
+      font-family: 'Inter', sans-serif;
+      color: white;
+    }
+
+    .back-arrow {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      z-index: 10;
+      cursor: pointer;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .media-section {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 40px 60px 0 60px;
+      box-sizing: border-box;
+    }
+
+    .project-image {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .text-section {
+      padding: 40px 60px;
+      text-align: left;
+    }
+
+    .project-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .green-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #00FF00;
+      border-radius: 50%;
+      animation: flicker 1s steps(1) infinite;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .tags {
+      margin: 10px 0;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .summary {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    @keyframes flicker {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+    #custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      font-size: 48px;
+      line-height: 1;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 9999;
+      user-select: none;
+      font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+      will-change: transform;
+    }
+
+    #custom-cursor.hovering {
+      transform: scale(1.3) translate(-50%, -50%);
+    }
+
+    .spill-emoji {
+      position: fixed;
+      font-size: 24px;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor">🍆</div>
+
+  <!-- Back Button -->
+  <div class="back-arrow" id="backBtn" onclick="history.back()">&larr; Back</div>
+
+  <!-- Media -->
+  <div class="media-section">
+    <img src="../img/Project17.PotentiometertoFan.gif" alt="Potentiometer to Fan" class="project-image" />
+  </div>
+
+  <!-- Text -->
+  <div class="text-section">
+    <div class="project-meta">
+      <div class="green-dot"></div>
+      <h1>Potentiometer → Fan</h1>
+    </div>
+    <div class="tags">
+      Week 8 · 2C · Arduino Input · Sensor Data · Physical Output
+    </div>
+    <div class="summary">
+      This physical computing project demonstrates how analog input (a potentiometer) can be used to control the speed of a DC fan through Arduino. Turning the dial varied the resistance, which Arduino read as a range of values (0–1023). This value was then mapped to motor speed.
+    </div>
+  </div>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
