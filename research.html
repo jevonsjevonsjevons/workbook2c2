@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    .research-entry {
+      background-color: #1f1f1f;
+      padding: 40px;
+      margin-bottom: 60px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .research-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .research-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .chat-thread {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bubble {
+      max-width: 80%;
+      padding: 12px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .bubble.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .bubble.blue {
+      background-color: #64CEF7;
+      color: rgb(0, 0, 0);
+      align-self: flex-start;
+    }
+
+    .bubble.yellow {
+      background-color: #ffca28;
+      color: black;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="icon logo">
+      <img src="icons/grindrlogo.svg" alt="Grindr Logo" />
+    </div>
+    <div class="icon" data-page="index">
+      <a href="index.html">
+        <img src="icons/Home.svg" alt="Home" />
+      </a>
+    </div>
+    <div class="icon active" data-page="research">
+      <a href="research.html">
+        <img src="icons/Researchicon.svg" alt="Research" />
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="header-bar">
+      <h1 class="page-title">
+        <span class="green-dot"></span> Research Journal
+      </h1>
+    </div>
+
+    <!-- ENTRY 1 -->
+    <div class="research-entry">
+      <img src="Research/Researchimg1.jpg" alt="Grindr" class="research-image" />
+      <div class="research-title">Grindr</div>
+      <div class="chat-thread">
+        <div class="bubble blue">Whatsup babe?💦</div>
+        <div class="bubble yellow">
+        </em> Grindr is a location-based hookup app used mostly by gay men, designed around instant visibility, desire, and chat, which is what I’ve based the interface of this site on. 
+        </div>
+        <div class="bubble blue">Looking? 👀</div>
+        <div class="bubble yellow">
+            I’m looking for DEPTH. Not just in who we talk to, but in how we present ourselves online. Using Grindr’s UI here is a way to play with the line between honesty and performance, how we present ourselves when we know we're being watched. Framing this as a research journal lets me lean into that tension, where reflection and self-earnestness are fundamental.
+        </div>
+      </div>
+    </div>
+
+    <!-- ENTRY 2 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg2.jpg" alt="Frances Stark - My Best Thing" class="research-image" />
+        <div class="research-title">Frances Stark - My Best Thing</div>
+        <div class="chat-thread">
+          <div class="bubble blue">What is this🔥?</div>
+          <div class="bubble yellow">
+            Frances Stark's <em>My Best Thing</em> is a feature-length animation that transforms her real-life Chatroulette conversations into a playful yet introspective exploration of intimacy, creativity, and digital communication. Using simplistic avatars and robotic voices, the film delves into themes of vulnerability, miscommunication, and the unexpected depth found in online interactions.
+          </div>
+          <div class="bubble blue">DTF👿?</div>
+          <div class="bubble yellow">
+            How about DTR? Down to REFLECT? I was inspired by Stark’s work to highlight the humour, vulnerability, and complexity inherent in contemporary online interactions, especially when in supposedly private sexual settings.
+          </div>
+        </div>
+      </div>
+
+    <!-- ENTRY 3 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg3.jpg" alt="James Bridle – Autonomous Trap 001" class="research-image" />
+        <div class="research-title">James Bridle – Autonomous Trap 001</div>
+        <div class="chat-thread">
+          <div class="bubble blue">Wyd aha?😜</div>
+          <div class="bubble yellow">
+            Nothing… I literally feel like a self-driving car trapped in a salt circle. Its sensors read it as a boundary so it stops. The machine isn’t broken, just obedient. The work exposes how automation relies on strict rules, with no room for ambiguity or context.
+          </div>
+          <div class="bubble blue">Whos driving baby 👀💅?</div>
+          <div class="bubble yellow">
+            Exactly… no one. It reframes physical computing as a site of constraint, not just interaction. I’m interested in how this reveals the limits of programmed logic, and how small inputs can quietly interrupt supposedly intelligent systems.
+          </div>
+        </div>
+      </div>
+
+
+    <!-- ENTRY 4 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg4.jpg" alt="Thomas Thwaites – GoatMan" class="research-image" />
+        <div class="research-title">Thomas Thwaites – GoatMan</div>
+        <div class="chat-thread">
+          <div class="bubble blue">HOTTTT. Is your body all natty? 😳</div>
+          <div class="bubble yellow">
+            No sorry. GoatMan is a prosthetic exoskeleton project by Thomas Thwaites, built not to enhance, but to escape. He mimics goat physiology to live among them, resisting productivity, language, and even upright posture- a speculative interface for unbecoming human.
+          </div>
+          <div class="bubble blue">You don’t have much experience do you? 🫦</div>
+          <div class="bubble yellow">
+            Exactly. It’s a refusal of control. In the context of physical computing, it flips the script; wearables here don’t optimise but disrupt. That idea of tech as withdrawal, not amplification, makes me think about interface design as a space for slowness, absurdity, or even failure.
+          </div>
+        </div>
+      </div>
+
+    <!-- ENTRY 5 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg5.jpg" alt="Anicka Yi – In Love With The World" class="research-image" />
+        <div class="research-title">Anicka Yi – In Love With The World</div>
+        <div class="chat-thread">
+          <div class="bubble blue">You are drop-dead gorgeous.😘</div>
+          <div class="bubble yellow">
+            Drop-dead? Nah im literally the opposite, flying high and slaying. Yi’s floating AI creatures, or “aerobes,” drift through space responding to heat, movement, and proximity, not commands. Their logic decentrest control, but rather entanglement. It’s a version of physical computing that centres the body, environment, and nonhuman agency.
+          </div>
+          <div class="bubble blue">Damn thats deep… What a trip…</div>
+          <div class="bubble yellow">
+            Thank you. Yi reframes intelligence as physical, relational, and emergent. It makes me wonder how interaction can be atmospheric rather than responsive, and what it means to build systems that don’t just react but behave.
+          </div>
+        </div>
+      </div>
+
+          <!-- ENTRY 6 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg6.jpg" alt="Remote controlled Painting Machine – Akira Kanayama" class="research-image" />
+        <div class="research-title">Remote controlled Painting Machine – Akira Kanayama</div>
+        <div class="chat-thread">
+          <div class="bubble blue">Dom?😈 R u into control?</div>
+          <div class="bubble yellow">
+            Not really… In 1957, Kanayama strapped a pen to a toy car and let it roam across a canvas. No brushstroke or hand, but just a motorised drift. The work repositions authorship: if the body isn’t doing the mark-making, what is? It’s mechanical, not expressive, but still intimate in its absurdity.
+          </div>
+          <div class="bubble blue">Ok but r u a top?</div>
+          <div class="bubble yellow">
+            Idk about top, but I definitely TOPPLE. I love how this flips the idea of control in physical computing, no sensors, no smart logic, just movement without oversight. It suggests automation doesn’t have to optimise, but it can wander, trace, play.
+          </div>
+        </div>
+      </div>
+
+
+    <!-- ENTRY 7 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg7.jpg" alt="Lorde Website" class="research-image" />
+        <div class="research-title">Lorde Website</div>
+        <div class="chat-thread">
+          <div class="bubble blue">Strip that down for me?🥵</div>
+          <div class="bubble yellow"> 
+            Lorde’s new site strips everything back to have no styling, no polish, just default browser UI. It mirrors the themes of her album VIRGIN and Ultrasound tour: exposure, rawness, scanning the body and spirit from the inside out. I like the use of the browser’s bare bones as metaphor.
+          </div>
+          <div class="bubble blue">I have no time for time-wasters. Bye.</div>
+          <div class="bubble yellow">
+            Lorde is the same- refusing aesthetic in favour of elemental form, conveying an idea through the most fundamental means possible.
+          </div>
+        </div>
+      </div>
+
+
+    <!-- ENTRY 8 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg8.jpg" alt="Tim Knowles – Tree Drawings" class="research-image" />
+        <div class="research-title">Tim Knowles – Tree Drawings</div>
+        <div class="chat-thread">
+          <div class="bubble blue">u good with ur hands? 🍆</div>
+          <div class="bubble yellow"> 
+            Not mine, but the tree’s. Knowles attaches pens to branches, letting the wind, weather, and tree movement draw on paper. It’s a kind of delegation, where the tool becomes the subject. What I love is how this bypasses human intent: the drawing is an index of movement, but it’s also a collaboration with the nonhuman.
+          </div>
+          <div class="bubble blue">ok but like… what r u doing with that?</div>
+          <div class="bubble yellow">
+            It makes me think about control in interactive systems. Here, the tree “performs” through a simple mechanical interface. That resonates with physical computing, especially the way small setups can record or translate motion, without needing to do too much. It reminds me that interaction doesn’t always mean intention. Why happens when we just let it drift?
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ENTRY 9 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg9.jpg" alt="Nancy Paterson – Stock Market Skirt" class="research-image" />
+        <div class="research-title">Nancy Paterson – Stock Market Skirt</div>
+        <div class="chat-thread">
+          <div class="bubble blue">I wanna rip that dress off you🫦</div>
+          <div class="bubble yellow"> 
+            Go ahead… but the market might beat you to it. Paterson’s Stock Market Skirt literally lifts or drops depending on real-time trading data. It’s a critique of how women’s bodies are exposed, measured, and made reactive under economic conditions we rarely see but constantly feel.
+          </div>
+          <div class="bubble blue">ok but like… what r u doing with that?</div>
+          <div class="bubble yellow">
+            Physical computing here isn’t just input/output. The skirt becomes an interface, where code meets culture. It makes me think about feedback systems in design: what it means when the body becomes the display.
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ENTRY 10 -->
+    <div class="research-entry">
+        <img src="Research/Researchimg10.jpg" alt="Aisen Caro Chacin – Play-A-Grill" class="research-image" />
+        <div class="research-title">Aisen Caro Chacin – Play-A-Grill</div>
+        <div class="chat-thread">
+          <div class="bubble blue">👅?</div>
+          <div class="bubble yellow"> 
+            Play-A-Grill is a hacked MP3 player embedded into a dental retainer. When worn, it transmits sound through bone conduction via your teeth, so music vibrates straight through your skull.
+          </div>
+          <div class="bubble blue">Mmm I wanna feel it deep in my jaw…</div>
+          <div class="bubble yellow">
+            You would. This work reframes interactivity as embodied and invasive not through touchscreens, but through teeth. It blurs boundaries between device and body, consumption and interface, asking what it means to listen when the tech is literally inside you. A speculative prosthetic for pleasure, control, or maybe both?
+        </div>
+      </div>
+    </div>
+
+  <!-- CURSOR + SCRIPT -->
+  <div id="custom-cursor">👀</div>
+  <script src="script.js" defer></script>
+  <script>
+    // Reveal bubbles on scroll
+    const bubbles = document.querySelectorAll('.bubble');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    bubbles.forEach(bubble => observer.observe(bubble));
+  </script>
+</body>
+</html>
